@@ -14,12 +14,12 @@
         android:layout_marginBottom="50dp"
         android:background="@color/bg_blue"
         android:text="@string/text_restart"
-        app:layout_constraintBottom_toTopOf="@+id/game_ring"
+        app:layout_constraintBottom_toTopOf="@+id/game_container"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
 
     <RelativeLayout
-        android:id="@+id/game_ring"
+        android:id="@+id/game_container"
         android:layout_width="300dp"
         android:layout_height="300dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -29,79 +29,79 @@
         android:background="@drawable/shape_bg">
 
         <ImageView
-            android:id="@+id/ring1"
+            android:id="@+id/container1"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_margin="20dp"
             android:background="@drawable/shape_ring_white" />
 
         <ImageView
-            android:id="@+id/ring2"
+            android:id="@+id/container2"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_margin="20dp"
-            android:layout_toEndOf="@+id/ring1"
-            android:layout_toRightOf="@+id/ring1" />
+            android:layout_toEndOf="@+id/container1"
+            android:layout_toRightOf="@+id/container1" />
 
         <ImageView
-            android:id="@+id/ring3"
+            android:id="@+id/container3"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_margin="20dp"
-            android:layout_toEndOf="@+id/ring2"
-            android:layout_toRightOf="@+id/ring2"
+            android:layout_toEndOf="@+id/container2"
+            android:layout_toRightOf="@+id/container2"
             android:background="@drawable/shape_ring_white" />
 
         <ImageView
-            android:id="@+id/ring4"
+            android:id="@+id/container4"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_margin="20dp"
-            android:layout_below="@+id/ring1" />
+            android:layout_below="@+id/container1" />
 
         <ImageView
-            android:id="@+id/ring5"
+            android:id="@+id/container5"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_margin="20dp"
-            android:layout_toEndOf="@+id/ring1"
-            android:layout_toRightOf="@+id/ring1"
-            android:layout_below="@+id/ring2" />
+            android:layout_toEndOf="@+id/container1"
+            android:layout_toRightOf="@+id/container1"
+            android:layout_below="@+id/container2" />
 
         <ImageView
-            android:id="@+id/ring6"
+            android:id="@+id/container6"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_margin="20dp"
-            android:layout_toEndOf="@+id/ring2"
-            android:layout_toRightOf="@+id/ring2"
-            android:layout_below="@id/ring3" />
+            android:layout_toEndOf="@+id/container2"
+            android:layout_toRightOf="@+id/container2"
+            android:layout_below="@id/container3" />
 
         <ImageView
-            android:id="@+id/ring7"
+            android:id="@+id/container7"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_margin="20dp"
-            android:layout_below="@+id/ring4" />
+            android:layout_below="@+id/container4" />
 
         <ImageView
-            android:id="@+id/ring8"
+            android:id="@+id/container8"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_margin="20dp"
-            android:layout_toEndOf="@+id/ring4"
-            android:layout_toRightOf="@+id/ring4"
-            android:layout_below="@+id/ring5"
+            android:layout_toEndOf="@+id/container4"
+            android:layout_toRightOf="@+id/container4"
+            android:layout_below="@+id/container5"
             android:background="@drawable/shape_ring_white" />
 
         <ImageView
-            android:id="@+id/ring9"
+            android:id="@+id/container9"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_margin="20dp"
-            android:layout_toEndOf="@+id/ring5"
-            android:layout_toRightOf="@+id/ring5"
-            android:layout_below="@id/ring6" />
+            android:layout_toEndOf="@+id/container5"
+            android:layout_toRightOf="@+id/container5"
+            android:layout_below="@id/container6" />
 
     </RelativeLayout>
 
