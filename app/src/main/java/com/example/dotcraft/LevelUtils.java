@@ -1,15 +1,12 @@
 package com.example.dotcraft;
 
-/**
- * Created by yangpeng on 1/19/22.
- */
 class LevelUtils {
 
     /**
      * 横向拖动一次指定行的点
      *
      *    x - x                        - - x
-     *    - - x   向右拖动一次第0行->    x - x
+     *    - - x   向右拖动一次第0行->  x - x
      *    - x -                        - x -
      */
     public static void horizontalDragLevel(Level level, boolean toRight, int rowIndex) {
@@ -55,9 +52,7 @@ class LevelUtils {
         }
     }
 
-    /**
-     * 关卡是否通过
-     */
+    // 判断关卡是否通过
     public static boolean hasSuccess(Level level) {
         for (int i = 0; i < 9; i++) {
             if (level.getDotArray()[i] != level.getContainerArray()[i]) {

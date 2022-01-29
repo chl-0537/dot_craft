@@ -1,8 +1,5 @@
 package com.example.dotcraft;
 
-/**
- * Created by yangpeng on 1/20/22.
- */
 class Level2 implements Level {
 
     private final int[] dotArr = new int[9];

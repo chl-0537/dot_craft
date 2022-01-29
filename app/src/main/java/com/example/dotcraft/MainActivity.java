@@ -76,6 +76,8 @@ public class MainActivity extends AppCompatActivity {
         refreshView();
     }
 
+
+    // 下一关
     private void nextLevel() {
         Button button = findViewById(R.id.next);
         button.setOnClickListener(new View.OnClickListener() {
@@ -87,6 +89,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    // 重新开始
     private void restart() {
         Button button = findViewById(R.id.restart);
         button.setOnClickListener(new View.OnClickListener() {
@@ -97,9 +100,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    /**
-     * 根据当前关卡状态刷新页面视图显示
-     */
+    // 刷新页面
     private void refreshView() {
         int[] containerArr = level.getContainerArray();
         int[] dotArr = level.getDotArray();
@@ -298,6 +299,7 @@ public class MainActivity extends AppCompatActivity {
         return Math.max(backupDot.getWidth() * -1, Math.min(translation, backupDot.getWidth()));
     }
 
+    // 提示过关
     private void congratulations() {
         Toast.makeText(this, "恭喜过关", Toast.LENGTH_SHORT).show();
     }
