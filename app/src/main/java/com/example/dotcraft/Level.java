@@ -1,6 +1,6 @@
 package com.example.dotcraft;
 
-public interface level {
+public interface Level {
 
     int[] getDotArray();
 

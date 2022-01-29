@@ -1,11 +1,11 @@
 package com.example.dotcraft;
 
-public class level1 implements level {
+public class Level1 implements Level {
 
     private final int[] dotArr = new int[9];
     private final int[] containerArr = new int[9];
 
-    public level1() {
+    public Level1() {
         dotArr[0] = 1;
         dotArr[5] = 1;
         dotArr[7] = 1;

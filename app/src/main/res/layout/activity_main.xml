@@ -2,7 +2,6 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bg_rice_white">
@@ -29,11 +28,18 @@
         android:background="@drawable/shape_bg">
 
         <ImageView
+            android:id="@+id/container0"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="20dp" />
+
+        <ImageView
             android:id="@+id/container1"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_margin="20dp"
-            android:background="@drawable/shape_ring_white" />
+            android:layout_toEndOf="@+id/container0"
+            android:layout_toRightOf="@+id/container0" />
 
         <ImageView
             android:id="@+id/container2"
@@ -48,15 +54,15 @@
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_margin="20dp"
-            android:layout_toEndOf="@+id/container2"
-            android:layout_toRightOf="@+id/container2"
-            android:background="@drawable/shape_ring_white" />
+            android:layout_below="@+id/container0" />
 
         <ImageView
             android:id="@+id/container4"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_margin="20dp"
+            android:layout_toEndOf="@+id/container0"
+            android:layout_toRightOf="@+id/container0"
             android:layout_below="@+id/container1" />
 
         <ImageView
@@ -66,22 +72,22 @@
             android:layout_margin="20dp"
             android:layout_toEndOf="@+id/container1"
             android:layout_toRightOf="@+id/container1"
-            android:layout_below="@+id/container2" />
+            android:layout_below="@id/container2" />
 
         <ImageView
             android:id="@+id/container6"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_margin="20dp"
-            android:layout_toEndOf="@+id/container2"
-            android:layout_toRightOf="@+id/container2"
-            android:layout_below="@id/container3" />
+            android:layout_below="@+id/container3" />
 
         <ImageView
             android:id="@+id/container7"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_margin="20dp"
+            android:layout_toEndOf="@+id/container3"
+            android:layout_toRightOf="@+id/container3"
             android:layout_below="@+id/container4" />
 
         <ImageView
@@ -91,17 +97,7 @@
             android:layout_margin="20dp"
             android:layout_toEndOf="@+id/container4"
             android:layout_toRightOf="@+id/container4"
-            android:layout_below="@+id/container5"
-            android:background="@drawable/shape_ring_white" />
-
-        <ImageView
-            android:id="@+id/container9"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_margin="20dp"
-            android:layout_toEndOf="@+id/container5"
-            android:layout_toRightOf="@+id/container5"
-            android:layout_below="@id/container6" />
+            android:layout_below="@id/container5" />
 
     </RelativeLayout>
 
@@ -115,11 +111,20 @@
         app:layout_constraintBottom_toBottomOf="parent">
 
         <ImageView
+            android:id="@+id/dot0"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="30dp"
+            android:background="@drawable/shape_dot_black" />
+
+        <ImageView
             android:id="@+id/dot1"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_margin="30dp"
-            android:background="@drawable/shape_dot_white" />
+            android:layout_toEndOf="@+id/dot0"
+            android:layout_toRightOf="@+id/dot0"
+            android:background="@drawable/shape_dot_black" />
 
         <ImageView
             android:id="@+id/dot2"
@@ -135,15 +140,16 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_margin="30dp"
-            android:layout_toEndOf="@+id/dot2"
-            android:layout_toRightOf="@+id/dot2"
-            android:background="@drawable/shape_dot_white" />
+            android:layout_below="@+id/dot0"
+            android:background="@drawable/shape_dot_black" />
 
         <ImageView
             android:id="@+id/dot4"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_margin="30dp"
+            android:layout_toEndOf="@id/dot0"
+            android:layout_toRightOf="@id/dot0"
             android:layout_below="@+id/dot1"
             android:background="@drawable/shape_dot_black" />
 
@@ -152,9 +158,9 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_margin="30dp"
-            android:layout_toEndOf="@id/dot1"
-            android:layout_toRightOf="@id/dot1"
-            android:layout_below="@+id/dot2"
+            android:layout_toEndOf="@+id/dot1"
+            android:layout_toRightOf="@+id/dot1"
+            android:layout_below="@id/dot2"
             android:background="@drawable/shape_dot_black" />
 
         <ImageView
@@ -162,18 +168,18 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_margin="30dp"
-            android:layout_toEndOf="@+id/dot2"
-            android:layout_toRightOf="@+id/dot2"
-            android:layout_below="@id/dot3"
-            android:background="@drawable/shape_dot_black" />
+            android:layout_below="@+id/dot3"
+            android:background="@drawable/shape_dot_black"/>
 
         <ImageView
             android:id="@+id/dot7"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_margin="30dp"
+            android:layout_toEndOf="@+id/dot3"
+            android:layout_toRightOf="@+id/dot3"
             android:layout_below="@+id/dot4"
-            android:background="@drawable/shape_dot_black"/>
+            android:background="@drawable/shape_dot_black" />
 
         <ImageView
             android:id="@+id/dot8"
@@ -182,19 +188,28 @@
             android:layout_margin="30dp"
             android:layout_toEndOf="@+id/dot4"
             android:layout_toRightOf="@+id/dot4"
-            android:layout_below="@+id/dot5"
-            android:background="@drawable/shape_dot_white" />
-
-        <ImageView
-            android:id="@+id/dot9"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_margin="30dp"
-            android:layout_toEndOf="@+id/dot5"
-            android:layout_toRightOf="@+id/dot5"
-            android:layout_below="@id/dot6"
+            android:layout_below="@id/dot5"
             android:background="@drawable/shape_dot_black" />
 
+        <ImageView
+            android:id="@+id/backup_dot"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:padding="20dp"
+            android:src="@drawable/shape_dot_white"
+            android:visibility="invisible" />
+
     </RelativeLayout>
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@color/bg_blue"
+        android:text="@string/text_next"
+        app:layout_constraintTop_toBottomOf="@+id/game_container"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
