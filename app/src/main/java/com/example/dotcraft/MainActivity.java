@@ -95,7 +95,13 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                refreshView();
+                if (level.getClass().getSimpleName().equals("Level1")) {
+                    level = new Level1();
+                    refreshView();
+                } else if (level.getClass().getSimpleName().equals("Level2")) {
+                    level = new Level2();
+                    refreshView();
+                }
             }
         });
     }
